@@ -34,5 +34,6 @@ int rbtree_erase(rbtree *, node_t *);
 void rbtree_transplant(rbtree *, node_t *, node_t *);
 void rbtree_delete_fixup(rbtree *, node_t *);
 int rbtree_to_array(const rbtree *, key_t *, const size_t);
+void inorder(node_t *, node_t *, key_t *, int *);
 
 #endif  // _RBTREE_H_
